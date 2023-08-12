@@ -255,7 +255,7 @@ button:active {
 
 #highlights:after,
 #highlights:before {
-	background: url('./assets/wave.svg');
+	background: url('./assets/images/wave.svg');
 	content: "";
 	position: absolute;
 	width: 101vw;
