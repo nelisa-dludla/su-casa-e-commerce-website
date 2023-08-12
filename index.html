@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Su Casa</title>
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+	<script src="https://kit.fontawesome.com/84325e05c5.js" crossorigin="anonymous"></script>
+	<script src="./index.js"></script>
+</head>
+<body>
+	<section id="landing">
+		<nav>
+			<div class="nav__container">
+				<div class="logo">
+					<img class="logo__img" src="./assets/icons/home.svg" alt="">
+					<span class="logo__text">Su Casa</span>
+				</div>
+				<ul class="nav__links">
+					<li><a href="#" class="nav__link">Home</a></li>
+					<li><a href="#" class="nav__link no-cursor">Contact</a></li>
+					<li><a href="#features" class="nav__link nav__link--primary">Decor</a></li>
+				</ul>
+				<button class="btn__menu" onclick="openMenu()">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				<div class="menu__backdrop">
+					<button class="btn__menu btn__menu--close" onclick="closeMenu()">
+						<i class="fa-regular fa-rectangle-xmark"></i>
+					</button>
+					<ul class="menu__links">
+						<li class="menu__list">
+							<a href="#" class="menu__link"  onclick="closeMenu()">Home</a>
+						</li>
+						<li class="menu__list">
+							<a href="#features" class="menu__link"  onclick="closeMenu()">Decor</a>
+						</li>
+						<li class="menu__list">
+							<a href="" class="menu__link no-cursor"  onclick="closeMenu()">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<header>
+			<div class="header__container">
+				<div class="header__description">
+					<h1>Elevate Your Home's Aesthetics</h1>
+					<h2>Discover a curated selection of exquisite home decor and furniture pieces that reflect your unique style with <span class="feature-color">Su Casa</span></h2>
+					<a href="#features">
+						<button class="btn">Explore Now</button>
+					</a>
+				</div>
+				<figure class="header__img--wrapper">
+					<img src="./assets/images/undraw_reading_time.svg" class="header__img" alt="">
+				</figure>
+			</div>
+		</header>
+	</section>
+
+	<main>
+		<section id="highlights">
+			<div class="container">
+				<div class="row">
+					<h2 class="section__title">
+						Why choose <span class="feature-color">Su Casa</span>
+					</h2>
+					<div class="highlight__wrapper">
+						<div class="highlight">
+							<div class="highlight__img">
+								<i class="fa-solid fa-wand-magic-sparkles"></i>
+							</div>
+							<h3 class="highlight__subtitle">
+								Effortless Transformation
+							</h3>
+							<p class="highlight__para">
+								Turn your home into a sanctuary effortlessly with our curated decor and furniture.
+							</p>
+						</div>
+						<div class="highlight">
+							<div class="highlight__img">
+								<i class="fa-solid fa-palette"></i>
+							</div>
+							<h3 class="highlight__subtitle">
+								Diverse Designs
+							</h3>
+							<p class="highlight__para">
+								Discover over 10,000 unique pieces spanning modern, vintage, and more.
+							</p>
+						</div>
+						<div class="highlight">
+							<div class="highlight__img">
+								<i class="fa-solid fa-tags"></i>
+							</div>
+							<h3 class="highlight__subtitle">
+								Affordable Elegance</h3>
+							</h3>
+							<p class="highlight__para">
+								Elevate your space without breaking the bank. Luxury living within reach.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="features">
+			<div class="container">
+				<div class="row">
+					<h2 class="section__title">
+						Featured <span class="feature-color">items</span>
+					</h2>
+					<div class="items">
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img class="item__img" src="./assets/images/modern-luxe.png" alt="">
+							</figure>
+							<div class="item__title">
+								Modern Luxe
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								<span class="item__price--normal">$999.99</span> $499.99
+							</div>
+						</div>
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img class="item__img" src="./assets/images/vintage-charm.png" alt="">
+							</figure>
+							<div class="item__title">
+								Rustic Rivival
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								<span class="item__price--normal">$499.99</span> $299.99
+							</div>
+						</div>
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img class="item__img" src="./assets/images/bringing-in-outdoors.png" alt="">
+							</figure>
+							<div class="item__title">
+								Nature's Retreat
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								<span class="item__price--normal">$399.99</span> $199.99
+							</div>
+						</div>
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img class="item__img" src="./assets/images/kids-wonderland.png" alt="">
+							</figure>
+							<div class="item__title">
+								Kids' Wonderland
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								<span class="item__price--normal">$499.99</span> $299.99
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="recent">
+			<div class="container">
+				<div class="row">
+					<h2 class="section__title">
+						Fresh <span class="feature-color">Finds</span>
+					</h2>
+					<div class="items">
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img src="./assets/images/hanging-planters.png" alt="" class="item__img">
+							</figure>
+							<div class="item__title">
+								3 Pack Wall Planters
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								$33.99
+							</div>
+						</div>
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img src="./assets/images/badminton-lights.png" alt="" class="item__img">
+							</figure>
+							<div class="item__title">
+								Shuttlecock Ceiling Light
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								$85.99
+							</div>
+						</div>
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img src="./assets/images/bathroom-tray.png" alt="" class="item__img">
+							</figure>
+							<div class="item__title">
+								Nordic Bathroom Tray
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								$11.99
+							</div>
+						</div>
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img src="./assets/images/bean-bag-chair.png" alt="" class="item__img">
+							</figure>
+							<div class="item__title">
+								Cozy Rustic Bean Bag
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								$89.99
+							</div>
+						</div>
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img src="./assets/images/full-length-mirror.png" alt="" class="item__img">
+							</figure>
+							<div class="item__title">
+								Elegance Full Length Mirror
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								$19.99
+							</div>
+						</div>
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img src="./assets/images/head-planter.png" alt="" class="item__img">
+							</figure>
+							<div class="item__title">
+								Ceramic Head Vase
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								$16.99
+							</div>
+						</div>
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img src="./assets/images/neutral-line-art-work.png" alt="" class="item__img">
+							</figure>
+							<div class="item__title">
+								Minimalist Line Art
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								$14.99
+							</div>
+						</div>
+						<div class="item">
+							<figure class="item__img--wrapper">
+								<img src="./assets/images/end-table.png" alt="" class="item__img">
+							</figure>
+							<div class="item__title">
+								Modern Sofa End Table
+							</div>
+							<div class="item__rating">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star-half"></i>
+							</div>
+							<div class="item__price">
+								$27.99
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="discover">
+			<div class="container">
+				<div class="row row__column">
+					<h2 class="section__tile">
+						Discover More <span class="feature-color">Styles</span>
+					</h2>
+					<a href="#features">
+						<button class="btn">Explore Now</button>
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row row__column">
+				<a href="#">
+					<div class="logo">
+						<figure class="footer__logo">
+							<img src="./assets/icons/home.svg" class="footer__logo--img" alt="">
+						</figure>
+						<span class="logo__text">Su Casa</span>
+					</div>
+				</a>
+				<div class="footer__list">
+					<a href="" class="footer__link">Home</a>
+					<a href="" class="footer__link no-cursor">About</a>
+					<a href="" class="footer__link">Decor</a>
+					<a href="" class="footer__link no-cursor">Contact</a>
+				</div>
+				<div class="footer__copyright">Copyright &copy; 2023 Su Casa</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
